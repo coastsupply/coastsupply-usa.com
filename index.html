@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coast Supply LLC - Raw Materials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #006699;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #catalog {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .misc-row {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        #contact {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .address, .email, .hours {
+            font-weight: bold;
+            margin: 12px 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        .email a {
+            color: #006699;
+            text-decoration: underline;
+        }
+        .email a:hover {
+            color: #003366;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #006699;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        footer a {
+            color: #a0d8ef;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coast Supply LLC</h1>
+        <p>Providing high-quality raw materials for industrial applications.</p>
+    </header>
+    
+    <nav>
+        <a href="#catalog">Catalog</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    
+    <section id="catalog">
+        <h2>Raw Materials Catalog</h2>
+        <p>We source a wide range of raw metals (including bronze), plastics, and other materials. As experts at sourcing hard-to-find or specialty items, we offer them in many shapes and sizes including sheets, rods, tubes, blocks, custom profiles, and more.</p>
+        <input type="text" id="searchInput" placeholder="Search materials (e.g., Steel, Bronze, UHMW, HDPE, Teflon)...">
+        
+        <table id="materialsTable">
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Description</th>
+                    <th>Applications</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Metals section -->
+                <tr>
+                    <td>Stainless Steel</td>
+                    <td>Corrosion-resistant alloy with high strength.</td>
+                    <td>Marine, food processing, medical equipment.</td>
+                    <td>In stock</td>
+                </tr>
+                <tr>
+                    <td>Aluminum</td>
+                    <td>Lightweight, conductive metal.</td>
+                    <td>Aerospace, automotive, construction.</td>
+                    <td>In stock</td>
+                </tr>
+                <tr>
+                    <td>Copper</td>
+                    <td>Excellent electrical conductivity.</td>
+                    <td>Electrical wiring, plumbing.</td>
+                    <td>On request</td>
+                </tr>
+                <tr>
+                    <td>Titanium</td>
+                    <td>High strength-to-weight ratio, biocompatible.</td>
+                    <td>Aerospace, medical implants.</td>
+                    <td>On request</td>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>Copper-tin alloy with excellent corrosion resistance, low friction, wear resistance, and good machinability.</td>
+                    <td>Bearings, bushings, gears, valves, pumps, marine hardware, propellers, industrial machinery components.</td>
+                    <td>In stock / On request</td>
+                </tr>
+
+                <!-- Plastics section -->
+                <tr>
+                    <td>Engineered Plastics (UHMW, HDPE, PTFE/Teflon, etc.)</td>
+                    <td>High-performance polymers available in sheets, rods, tubes, blocks, custom shapes, and sizes.</td>
+                    <td>Wear parts, chemical tanks, seals, guides, food processing equipment, low-friction components.</td>
+                    <td>In stock / Cut-to-size</td>
+                </tr>
+                <tr>
+                    <td>UHMW (Ultra-High Molecular Weight Polyethylene)</td>
+                    <td>Extremely tough, low-friction, abrasion-resistant plastic with excellent impact strength and chemical resistance.</td>
+                    <td>Conveyor guides, wear strips, chute liners, bearings, marine fenders, food processing parts.</td>
+                    <td>In stock</td>
+                </tr>
+                <tr>
+                    <td>HDPE (High-Density Polyethylene)</td>
+                    <td>Durable, chemical-resistant thermoplastic with good strength-to-density ratio and impact resistance.</td>
+                    <td>Chemical tanks, piping, cutting boards, industrial containers, geomembranes, automotive components.</td>
+                    <td>In stock</td>
+                </tr>
+                <tr>
+                    <td>Teflon / PTFE (Polytetrafluoroethylene)</td>
+                    <td>Non-stick, extremely low-friction fluoropolymer with outstanding chemical and heat resistance (up to 500°F+).</td>
+                    <td>Seals, gaskets, bearings, electrical insulation, non-stick coatings, chemical processing equipment.</td>
+                    <td>On request</td>
+                </tr>
+
+                <!-- Miscellaneous section -->
+                <tr class="misc-row">
+                    <td colspan="4">Miscellaneous / Specialty Materials</td>
+                </tr>
+                <tr>
+                    <td>Hard-to-Find & Specialty Materials</td>
+                    <td>Custom or rare alloys, exotic metals, obsolete grades, or unique composites that are difficult to source elsewhere.</td>
+                    <td>Custom industrial projects, legacy equipment repairs, specialized prototypes, or any application requiring non-standard materials.</td>
+                    <td>On request — Coast Supply LLC specializes in expert sourcing of hard-to-find materials</td>
+                </tr>
+
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Fill out the form below to inquire about raw materials (including bronze, plastics like UHMW/HDPE/Teflon, or hard-to-find specialties), availability, shapes/sizes, or quotes. We'll get back to you promptly.</p>
+        <p class="address">2015 County Road 220 Suite B<br>Angleton, TX 77515</p>
+        <p class="email">Email: <a href="mailto:coastsupply@usa.com">coastsupply@usa.com</a></p>
+        <p class="hours">Hours of Operation: 8:00 AM - 5:00 PM CST<br>Monday through Friday</p>
+        <form action="https://formspree.io/f/mjgepowz" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone (optional):</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2026 Coast Supply LLC. All rights reserved.<br>
+        2015 County Road 220 Suite B, Angleton, TX 77515<br>
+        Email: <a href="mailto:coastsupply@usa.com">coastsupply@usa.com</a><br>
+        Hours: 8:00 AM - 5:00 PM CST (Mon–Fri)</p>
+    </footer>
+
+    <script>
+        // Simple search functionality for catalog
+        const searchInput = document.getElementById('searchInput');
+        const table = document.getElementById('materialsTable');
+        const rows = table.getElementsByTagName('tr');
+
+        searchInput.addEventListener('keyup', function() {
+            const filter = searchInput.value.toLowerCase();
+            for (let i = 1; i < rows.length; i++) { // Skip header row
+                const cells = rows[i].getElementsByTagName('td');
+                let match = false;
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j] && cells[j].textContent.toLowerCase().includes(filter)) {
+                        match = true;
+                        break;
+                    }
+                }
+                rows[i].style.display = match ? '' : 'none';
+            }
+        });
+    </script>
+</body>
+</html>
